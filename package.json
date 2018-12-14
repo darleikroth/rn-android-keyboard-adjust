@@ -1,7 +1,7 @@
 {
   "name": "react-native-android-keyboard-adjust",
   "version": "1.0.0",
-  "description": "Simple android native module to manipulate the behavor of keyboard.",
+  "description": "Simple android native module to manipulate the behavior of keyboard.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,7 @@
     "adjust"
   ],
   "author": "Darlei Kroth <maildarlei@gmail.com> (https://github.com/darleikroth)",
-  "license": "ISC",
+  "license": "MIT License",
   "bugs": {
     "url": "https://github.com/darleikroth/react-native-android-keyboard-adjust/issues"
   },
