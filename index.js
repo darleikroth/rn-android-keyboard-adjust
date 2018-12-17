@@ -27,15 +27,15 @@ export default {
     }
   },
 
-  setAlwaysVisible() {
-    if (android) {
-      RNAndroidKeyboardAdjust.setAlwaysVisible()
-    }
-  },
-
   setAlwaysHidden() {
     if (android) {
       RNAndroidKeyboardAdjust.setAlwaysHidden()
+    }
+  },
+
+  setAlwaysVisible() {
+    if (android) {
+      RNAndroidKeyboardAdjust.setAlwaysVisible()
     }
   },
 
