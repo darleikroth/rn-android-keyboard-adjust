@@ -1,6 +1,7 @@
 ## rn-android-keyboard-adjust
 
-[![npm version](https://badge.fury.io/js/rn-android-keyboard-adjust.svg)](https://badge.fury.io/js/rn-android-keyboard-adjust)
+[![npm][npm]][npm-url]
+[![size][size]][size-url]
 
 Simple android native module to manipulate the behavior of keyboard. Based on [react-native-android-keyboard-adjust](https://github.com/zubricky/react-native-android-keyboard-adjust) by [Marc Zubricky](https://github.com/zubricky).
 
@@ -40,3 +41,9 @@ setVisible | Please show the soft input area when normally appropriate (when the
 setHidden | Please hide any soft input area when normally appropriate (when the user is navigating forward to your window).
 setUnchanged | Please don't change the state of the soft input area.
 > Methods reference from [Android Developer](https://developer.android.com/reference/android/view/WindowManager.LayoutParams#SOFT_INPUT_ADJUST_NOTHING).
+
+[npm]: https://badge.fury.io/js/rn-android-keyboard-adjust.svg
+[npm-url]: https://npmjs.com/package/rn-android-keyboard-adjust
+
+[size]: https://packagephobia.now.sh/badge?p=rn-android-keyboard-adjust
+[size-url]: https://packagephobia.now.sh/result?p=rn-android-keyboard-adjust
