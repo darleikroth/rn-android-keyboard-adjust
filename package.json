@@ -1,6 +1,6 @@
 {
   "name": "rn-android-keyboard-adjust",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple android native module to manipulate the behavior of keyboard. Based on react-native-android-keyboard-adjust by Marc Zubricky.",
   "main": "index.js",
   "scripts": {
