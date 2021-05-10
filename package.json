@@ -1,8 +1,8 @@
 {
   "name": "rn-android-keyboard-adjust",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Simple android native module to manipulate the behavior of keyboard. Based on react-native-android-keyboard-adjust by Marc Zubricky.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/darleikroth/rn-android-keyboard-adjust/issues"
   },
-  "homepage": "https://github.com/darleikroth/rn-android-keyboard-adjust#readme"
+  "homepage": "https://github.com/darleikroth/rn-android-keyboard-adjust#readme",
+  "devDependencies": {
+    "@types/react-native": "^0.64.5"
+  }
 }
