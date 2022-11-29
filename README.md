@@ -1,33 +1,32 @@
-## rn-android-keyboard-adjust
+# rn-android-keyboard-adjust
 
 [![npm][npm]][npm-url]
 [![size][size]][size-url]
 
 Simple android native module to manipulate the behavior of keyboard. Based on [react-native-android-keyboard-adjust](https://github.com/zubricky/react-native-android-keyboard-adjust) by [Marc Zubricky](https://github.com/zubricky).
 
-### Install
+## Installation
 
-```
-npm i --save rn-android-keyboard-adjust
-```
-```
-react-native link rn-android-keyboard-adjust
+```sh
+npm i -S rn-android-keyboard-adjust
 ```
 
-### Usage
+## Usage
 
 ```js
-import RNAndroidKeyboardAdjust from 'rn-android-keyboard-adjust'
+import { setAdjustResize, setAdjustNothing } from 'rn-android-keyboard-adjust';
 
-class Sample extends React.Component {
+// ...
 
-  componentDidMount() {
-    RNAndroidKeyboardAdjust.setAdjustNothing()
-  }
-}
+React.useEffect(() => {
+    setAdjustResize();
+    return () => {
+      setAdjustNothing();
+    };
+  }, []);
 ```
 
-### Methods
+## Methods
 
 Name | Description
 --- | ---
@@ -47,3 +46,7 @@ setUnchanged | Please don't change the state of the soft input area.
 
 [size]: https://packagephobia.now.sh/badge?p=rn-android-keyboard-adjust
 [size-url]: https://packagephobia.now.sh/result?p=rn-android-keyboard-adjust
+
+## License
+
+MIT

@@ -3,25 +3,29 @@ package com.tclado.androidkeyboardadjust;
 import android.app.Activity;
 import android.view.WindowManager;
 
+import androidx.annotation.NonNull;
+
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.module.annotations.ReactModule;
 
-/**
- * A module to change how the android keyboard is displayed
- */
-public class AndroidKeyboardAdjustModule extends ReactContextBaseJavaModule {
+@ReactModule(name = RnAndroidKeyboardAdjustModule.NAME)
+public class RnAndroidKeyboardAdjustModule extends ReactContextBaseJavaModule {
+  public static final String NAME = "RnAndroidKeyboardAdjust";
 
-    public AndroidKeyboardAdjustModule(ReactApplicationContext reactContext) {
-        super(reactContext);
-    }
+  public RnAndroidKeyboardAdjustModule(ReactApplicationContext reactContext) {
+    super(reactContext);
+  }
 
-    @Override
-    public String getName() {
-        return "RNAndroidKeyboardAdjust";
-    }
+  @Override
+  @NonNull
+  public String getName() {
+    return NAME;
+  }
 
-    @ReactMethod
+
+  @ReactMethod
     public void setAdjustNothing() {
 
         final Activity activity = getCurrentActivity();
