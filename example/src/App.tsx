@@ -16,7 +16,13 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Input with keyboard layout resize</Text>
-      <TextInput value={value} onChangeText={(text) => setValue(text)} />
+      <TextInput
+        style={styles.input}
+        value={value}
+        onChangeText={(text) => setValue(text)}
+        placeholder="Type here"
+        placeholderTextColor="#ccc"
+      />
     </View>
   );
 }
@@ -31,5 +37,13 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     marginVertical: 20,
+  },
+  input: {
+    padding: 8,
+    borderWidth: 1,
+    borderColor: '#ddd',
+    width: '80%',
+    margin: 8,
+    borderRadius: 8,
   },
 });
