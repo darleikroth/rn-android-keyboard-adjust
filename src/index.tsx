@@ -18,10 +18,6 @@ const RnAndroidKeyboardAdjust = NativeModules.RnAndroidKeyboardAdjust
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return RnAndroidKeyboardAdjust.multiply(a, b);
-}
-
 export function setAdjustNothing() {
   if (android) {
     RnAndroidKeyboardAdjust.setAdjustNothing();
