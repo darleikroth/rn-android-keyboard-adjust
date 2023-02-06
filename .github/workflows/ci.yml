@@ -1,7 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ "master" ]
+    # branches: [ "master" ]
+    tags:
+      - v2*
 
 jobs:
   lint:
