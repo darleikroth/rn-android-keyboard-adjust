@@ -72,6 +72,20 @@ export function setUnchanged() {
   }
 }
 
+export function getSoftInputMode(
+  getter: (softInputMode: number) => void
+): void {
+  if (android) {
+    RnAndroidKeyboardAdjust.getSoftInputMode(getter);
+  }
+}
+
+export function setSoftInputMode(softInputMode: number): void {
+  if (android) {
+    RnAndroidKeyboardAdjust.setSoftInputMode(softInputMode);
+  }
+}
+
 export default {
   setAdjustNothing,
   setAdjustPan,
@@ -82,4 +96,6 @@ export default {
   setVisible,
   setHidden,
   setUnchanged,
+  getSoftInputMode,
+  setSoftInputMode,
 };

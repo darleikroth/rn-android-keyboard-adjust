@@ -39,6 +39,8 @@ setAlwaysVisible | Please always make the soft input area visible when this wind
 setVisible | Please show the soft input area when normally appropriate (when the user is navigating forward to your window).
 setHidden | Please hide any soft input area when normally appropriate (when the user is navigating forward to your window).
 setUnchanged | Please don't change the state of the soft input area.
+getSoftInputMode | Get an integer code of current softInputMode value.
+setSoftInputMode | Set softInputMode value by an integer code .
 > Methods reference from [Android Developer](https://developer.android.com/reference/android/view/WindowManager.LayoutParams#SOFT_INPUT_ADJUST_NOTHING).
 
 [npm]: https://badge.fury.io/js/rn-android-keyboard-adjust.svg
