@@ -9,6 +9,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
+import com.facebook.react.bridge.Callback;
 
 @ReactModule(name = RnAndroidKeyboardAdjustModule.NAME)
 public class RnAndroidKeyboardAdjustModule extends ReactContextBaseJavaModule {
@@ -169,4 +170,37 @@ public class RnAndroidKeyboardAdjustModule extends ReactContextBaseJavaModule {
             }
         });
     }
+
+   @ReactMethod
+   public void getSoftInputMode(Callback callback) {
+     final Activity activity = getCurrentActivity();
+
+     if (activity == null) {
+       return;
+     }
+
+     activity.runOnUiThread(new Runnable() {
+       @Override
+       public void run() {
+         int softInputMode = activity.getWindow().getAttributes().softInputMode;
+         callback.invoke(softInputMode);
+       }
+     });
+   }
+
+  @ReactMethod
+  public void setSoftInputMode(int softInputMode) {
+    final Activity activity = getCurrentActivity();
+
+    if (activity == null) {
+      return;
+    }
+
+    activity.runOnUiThread(new Runnable() {
+      @Override
+      public void run() {
+        activity.getWindow().setSoftInputMode(softInputMode);
+      }
+    });
+  }
 }
